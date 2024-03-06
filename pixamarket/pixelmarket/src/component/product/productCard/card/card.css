@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(3, 1fr));
+    align-items: center;
+    padding: 0 10rem;
+    min-height:100vh;
+  }
+  
+  .box {
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .box:hover { 
+    background-color: #f8f8f8; /* Or any subtle color */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Increase shadow */
+  }
+  
+  .img:hover img {
+    transform: scale(1.05); /* Zoom effect, adjust the value */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Slightly darker blue */
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  .img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  img::after { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity */
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  /* Add title on hover to the overlay */
+  .img::after { 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .img:hover::after {
+    opacity: 1;
+  }
+  
+  .desc {
+    flex-grow: 1;
+    margin: 16px 0;
+  }
+  .badge {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    padding: 4px 8px;
+    background-color: #ff5722; /* Example: orange */
+    color: white;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  
+  Use code with caut
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Change this value to adjust the number of lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .card-price {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #0069d9;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      justify-content: space-between;
+    }
+  }
+  .box {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards; /* Adjust time */
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .btn {
+    background-color: #007bff !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+    font-size: 1rem !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    outline: none !important; /* Remove outline on focus */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3 !important; /* Darker shade on hover */
+    transform: translateY(-2px) !important; /* Add slight vertical shift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add subtle shadow on hover */
+  }
+  

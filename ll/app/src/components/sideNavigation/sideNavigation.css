@@ -1,0 +1,40 @@
+.side-navigation {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding-top: 60px; /* Space for the close button */
+    transition: left 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .side-navigation.open {
+    left: 0; /* Slide in when open */
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  

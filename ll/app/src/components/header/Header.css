@@ -1,0 +1,59 @@
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  /* Logo styles */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation styles */
+  .navigation {
+    display: flex;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Search bar styles */
+  .search-bar {
+    margin-left: auto;
+    display: flex;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* User actions styles */
+  .user-actions a {
+    color: #fff;
+    margin-left: 10px;
+  }
+  
